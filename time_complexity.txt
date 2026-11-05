@@ -1,0 +1,62 @@
+====: Time Complexity :====
+
+    time complexity != time taken
+
+Def: Rate at which the program increses it's time with respect to size of the input.
+
+
+Wrost Case: Maximum time the algorithm can take
+Best Case: Minimum time the algorithm will ever take 
+Avg Case: Expected time over all inputs 
+
+
+Big O: Big O is a mathematical way to describe how the performance of an algorithm changes as the size of the input grows.
+
+
+----: Common Time Complexities :----
+
+1. Constant Time – O(1):
+      execution time does not depend on the size of the input.
+        EX: seraching a element from an array
+
+2.  Logarithmic Time – O(log n)
+      Every step reduces the problem size by a constant factor, most often by half.
+       EX: Binary seraching
+
+3. Linear Time – O(n)
+      Grows directly in proportion to the size of the input.
+      EX: Finding maximum value in the array
+
+4. Linearithmic Time – O(n log n)
+      Combine two behaviors:
+        A. A log n factor from repeatedly splitting the input
+        B. An n factor from processing or merging the pieces
+      EX: Merge sort
+
+5. Quadratic Time – O(n²)
+      Grows proportionally to the square of the input size.
+      Ex: happens in nested loops
+
+6.  Exponential Time – O(2ⁿ)
+      This happens in problems where each element can branch into multiple recursive calls.
+      EX: If the set has n elements, there are 2ⁿ possible subsets. That means just 30 elements give you over 1 billion subsets, and 40 elements give you over 1 trillion.
+
+7.  Factorial Time – O(n!)
+      A classic example of O(n!) is generating all permutations of a string.
+
+
+
+====: Space Complexity :====
+
+Space complexity tells you how much extra memory your algorithm uses in addition to the input itself.
+
+----: Common space complexities :----
+
+1. O(1): Constant Space
+      If you scan an array to find the maximum value, you only store one variable to track the current max.
+    
+2. O(n): Linear Space
+      suppose you collect all even numbers from the array into a new list.
+
+3. O(log n): Logarithmic Space
+4. O(n²): Quadratic Space
